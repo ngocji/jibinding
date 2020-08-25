@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="android.os.Bundle" />
+
+        <variable
+            name="listener"
+            type="com.x.y.z.bindingbase.Dialog" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jibase.view.ITextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            makeText="@{data.getString(`title`)}" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->listener.dismiss()}" />
+    </LinearLayout>
+</layout>
