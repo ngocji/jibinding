@@ -1,12 +1,16 @@
 package com.x.y.z.bindingbase
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.jibase.anotation.ViewInflate
+import com.jibase.ui.BaseViewModel
+import com.jibase.utils.UI
+import com.jibinding.ui.BindActivity
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        Dialog.newInstance("Test title").show(supportFragmentManager)
+@ViewInflate(layout = R.layout.activity_main, viewModel = TestViewModel::class)
+class MainActivity : BindActivity<TestViewModel>() {
+    override fun onViewReady(savedInstanceState: Bundle?) {
+        UI.delay({
+            viewModel.text.post("Next text")
+        }, 1000)
     }
 }
