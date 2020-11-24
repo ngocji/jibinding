@@ -63,7 +63,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    api 'com.github.ngocji:jibase:2.1.6'
+    api 'com.github.ngocji:jibase:2.1.7'
 
     // data binding
     api "androidx.lifecycle:lifecycle-extensions:2.2.0"
