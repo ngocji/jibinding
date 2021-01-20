@@ -28,7 +28,7 @@ version = '1.0'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 21
@@ -63,11 +63,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    api 'com.github.ngocji:jibase:2.1.7'
+    api 'com.github.ngocji:jibase:2.1.8'
 
     // data binding
     api "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    kapt "androidx.databinding:databinding-compiler:4.0.1"
+    kapt "androidx.databinding:databinding-compiler:4.1.2"
     // alternately - if using Java8, use the following instead of lifecycle-compiler
     api "androidx.lifecycle:lifecycle-common-java8:2.2.0"
 }
