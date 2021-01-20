@@ -67,7 +67,7 @@ dependencies {
 
     // data binding
     api "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    kapt "androidx.databinding:databinding-compiler:4.1.2"
+    kapt "androidx.databinding:databinding-compiler:4.0.1"
     // alternately - if using Java8, use the following instead of lifecycle-compiler
     api "androidx.lifecycle:lifecycle-common-java8:2.2.0"
 }
