@@ -6,6 +6,8 @@
         <variable
             name="vm"
             type="com.x.y.z.bindingbase.TestViewModel" />
+
+        <import type="com.x.y.z.bindingbase.R" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -15,12 +17,11 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <TextView
-            makeText="@{vm.text}"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp"
+        <com.jibase.view.ItemView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:itemIconColor="@color/colorPrimary"
+            app:itemText="@{R.string.empty_recycler}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

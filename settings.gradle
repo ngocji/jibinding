@@ -1,3 +1,6 @@
 include ':jibinding'
 include ':app'
 rootProject.name = "BindingBase"
+
+//include ":jibaseDebug"
+//project(":jibaseDebug").projectDir = file("D:/Project/FreeCode/KotlinBase/jibase")

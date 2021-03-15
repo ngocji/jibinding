@@ -63,11 +63,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    api 'com.github.ngocji:jibase:2.2.0'
+    api 'com.github.ngocji:jibase:2.2.4'
+//    api project(':jibaseDebug')
 
     // data binding
     api "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    kapt "androidx.databinding:databinding-compiler:4.0.1"
+//    kapt "androidx.databinding:databinding-compiler:4.0.1"
     // alternately - if using Java8, use the following instead of lifecycle-compiler
     api "androidx.lifecycle:lifecycle-common-java8:2.2.0"
 }

@@ -11,7 +11,8 @@ import com.jibase.extensions.*
 
 //---- Image Binding ----//
 @BindingAdapter("load", "placeHolder", "errorHolder", requireAll = false)
-fun loadSimple(v: ImageView, value: Any, placeHolder: Int = -1, errorHolder: Int = -1) {
+fun loadSimple(v: ImageView, value: Any?, placeHolder: Int = -1, errorHolder: Int = -1) {
+    value ?: return
     v.load(value, placeHolder, errorHolder)
 }
 
